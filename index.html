@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Project-Three</title>
+    </head>
+    <body>
+        <!-- Topbar and logo -->
+        <div class="topBar">
+            <img
+                src="Images/psrlogoo.png"
+                alt="Psr,s-logo"
+                class="logo"
+            />
+            <div class="topBarButtons">
+                <a href="#" class="blueEffectBtn">GET STARTED</a>
+                <a href="#" class="greyEffectBtn">LOG IN</a>
+                <i class="fa fa-search"></i>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <hr class="topLineOfButtonBar" />
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">What I DO</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <hr />
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="intro-title">Hi, I am Prakash Kumar</h1>
+            <p class="intro-subtitle">Front End Dev</p>
+            <img
+                src="../Project2/imgs/prakash.jpeg"
+                alt="psr pic"
+                class="intro-img"
+            />
+        </section>
+
+        <section class="WorkDetails">
+            <div class="DetailsContent">
+                <h1>Who I am?</h1>
+                <p class="DetailsDescription">
+                    A 4th Year B.Tech Student, who will get a degree in Electrical
+                    Engineering from
+                    <abbr title="National Institute Of Technology, Patna">NIT PATNA</abbr> in
+                    June-2023. I'm from Ghoghardiha, Madhubani ,Bihar.
+                </p>
+                <a href="#" class="DetailsButton">Browse extensions</a>
+            </div>
+            <div class="DetailsImage">
+                <img src="Images/Rqmark.jpg" class="DetailsIcon" />
+            </div>
+        </section>
+        <section class="WorkDetails">
+            <div class="DetailsImage">
+                <img src="Images/working-with-compute.jpg" class="DetailsIcon" />
+            </div>
+            <div class="DetailsContent">
+                <h1>Work</h1>
+                <p class="DetailsDescription">
+                    By Degree I'm an Electrical Engineer But I also do Coding so i'm
+                    focusing on being a software developer/Web Developer. My
+                    Technical Skills are 'C++' , 'HTML' , 'CSS' , 'JavaScript' ,
+                    'MySQL' , 'Tableau' & 'OpenDSS' .
+                </p>
+                <a href="#" class="DetailsButton">Browse extensions</a>
+            </div>
+        </section>
+        <!-- photographySection -->
+        <section class="photography">
+            <div class="photographyContent">
+                <h1>Sometimes I do Photography too.</h1>
+                <p class="photographyDescription">
+                    This is PSR's Portifolio website where you will know him much
+                    better.
+                </p>
+                <br />
+                <a href="#" class="openGallery">Open Gallery</a>
+                <!-- <a href="#" class="homepageExtendButton">Customize and extend</a> -->
+            </div>
+            <div class="heroImages">
+                <div class="BjorkImages">
+                    <img onclick="openpics" src="realpics/EFFECTS.jpg" class="images" />
+                    <img onclick="openpics" src="realpics/IMG_20191027_192931.jpg" class="images" />
+                    <img onclick="openpics" src="realpics/IMG_20210927_175412.jpg" class="images" />
+                </div>
+                <div class="scratchImages">
+                    <img onclick="openpics" src="realpics/IMG_20220811_080418.jpg" class="images" />
+                    <img onclick="openpics" src="realpics/IMG_20220809_200111.jpg" class="images" />
+                    <img onclick="openpics"
+                        src="realpics/IMG_20220715_190148.jpg1657891911338.jpg"
+                        class="images"
+                    />
+                </div>
+            </div>
+        </section>
+    </body>
+    <br /><br />
+    <footer>
+        <hr class="footerBreak" />
+        <br />
+        <h3 style="margin-left: 50px">Contact Us</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-rss"></i></a>
+        </div>
+    </footer>
+    <script>
+        let pics=document.getElementsByClassName("images");
+        function openpics(){
+            alert('Psr');
+        }
+    </script>
+</html>
