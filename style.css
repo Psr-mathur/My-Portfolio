@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*Topbar-and logo*/
+body {
+    max-width: 1440px;
+    margin: auto;
+    color: #333;
+}
+.topBar {
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 40px;
+}
+.topBar a {
+    text-decoration: none;
+    padding: 0px 25px;
+}
+.topBarButtons i {
+    color: black;
+    height: 20px;
+}
+/*Navbar*/
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 100px;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar ul li {
+    padding: 5px 20px;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+.intro{
+    /* display: flex; */
+    position: relative;
+    height: 200px;
+    background: rgb(233, 240, 243);
+}
+.intro-title{
+    margin-top: 50px;
+    display: flex;
+    padding-top: 5%;
+    padding-left: 45%;
+    width: 450px;
+}
+.intro-subtitle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15%;
+    display: flex;
+    margin: 10px 40px;
+    justify-content: end;
+    background: #c09bed;
+}
+@media(min-width:800px){
+    .intro-title{
+        width: 3000px;;
+    }
+}
+.intro-img{
+    position: absolute;
+    width: 160px;
+    top: 10%;
+    left: 20%;
+}
+/* homepageHeroSection */
+.photography {
+    display: flex;
+    background-image: url(/Images/homepage-hero-woo-bg.png);
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 7%;
+    padding-top: 7%;
+    background-color: #eee;
+    background-size: 100%;
+}
+.photographyContent {
+    width: 51%;
+    padding: 50px 0px 50px 105px;
+}
+.photographyContent h1 {
+    font-family: sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #101517;
+}
+.photographyDescription {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 30px 0px;
+    color: #333333d6;
+}
+.openGallery {
+    text-decoration: none;
+    color: white;
+    background-color: #674399;
+    font-size: 1em;
+    border-radius: 8px;
+    padding: 16px 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: -16px;
+}
+.openGallery:hover {
+    background-color: #7f54b3;
+}
+/* .homepageExtendButton {
+    text-decoration: none;
+    color: #674399;
+    font-size: 1em;
+    border-radius: 8px;
+    padding: 20px 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.homepageExtendButton:hover {
+    text-decoration: underline;
+} */
+.heroImages {
+    width: 50%;
+    display: flex;
+}
+.BjorkImages {
+    width: 25%;
+    margin-left: 10px;
+}
+.scratchImages {
+    width: 25%;
+    margin: 0px 154px;
+    padding-top: 58px;
+}
+.images {
+    height: 175px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 12px 24px;
+    box-shadow: 0 8px 16px #aaa;
+    cursor: pointer;
+}
+.images:hover{
+    transition: 0.3s;
+    transform: scale(2.25);
+}
+/*  */
+.WorkDetails {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    line-height: 32px;
+}
+.DetailsDescription {
+    margin: 50px 0px;
+    color: #333;
+    font-size: 18px;
+}
+.DetailsContent {
+    width: 50%;
+    padding: 0px 0px 0px 208px;
+}
+.DetailsContent h1 {
+    color: #101517;
+}
+.DetailsImage {
+    margin: 0px 200px 0px 5px;
+}
+.DetailsButton {
+    text-decoration: none;
+    color: white;
+    background-color: #674399;
+    font-size: 1em;
+    border-radius: 8px;
+    padding: 20px 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.DetailsButton:hover {
+    background-color: #7f54b3;
+    ;
+}
+.DetailsIcon{
+    /* width: 100%; */
+    width:513px;
+    height:350px;
+    object-fit: cover;
+    padding-left: 30px;
+}
+/* footer */
+.social-icons{
+    /* border-top: 1px solid #dcdcde; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons i {
+    color: #533582;
+    font-size: 20px;
+    padding: 20px 3px;
+}
+.footerBreak {
+    color: #abb8c3;
+    width: 86%;
+    margin-left: 8%;
+}
+@media (min-width:320px) and (max-width:600px) {
+    .logo {
+        /* display: block; */
+        width: 150px;
+    }
+    hr {
+        display: none;
+    }
+    .topBar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        border-bottom: 1px solid #dcdcde;
+        justify-content: space-between;
+        padding: 7px 34px;
+        z-index: 1;
+    }
+    .greyEffectBtn, .blueEffectBtn {
+        display: none;
+    }
+   .fa-bars{
+        /* display: inline-block; */
+        padding-left: 5px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        /* NONE */
+        display: none; 
+    }
+    .photography {
+        display: block;
+        height: auto;
+        padding: 80px 30px;
+    }
+    .photographyContent {
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    .photographyContent h1 {
+        font-size: 27px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 38px;
+    }
+    .photographyDescription {
+        padding-top: 10px;
+    }
+    .openGallery, .homepageExtendButton {
+        display: inline-block;
+    }
+    .images {
+        width: 100%;
+        /* height: auto; */
+        margin: 10px auto;
+    }
+    .heroImages {
+        width: 100%;
+        height: auto;
+    }
+    .BjorkImages, .scratchImages {
+        height: 50%;
+        width: auto;
+        position: relative;
+        margin: 5px;
+    }
+    .sellingInfo {
+        display: block;
+        /* overflow: hidden; */
+    }
+    .DetailsDescription {
+        padding: -1px 20px;
+        color: #33333d;
+        font-size: 18px;
+        margin: 38px 0px;
+    }
+    .DetailsContent {
+        width: 100%;
+        text-align: center;
+        padding: 10px 40px;
+    }
+    
+    .DetailsIcon {
+        padding: 10px;
+        height: auto;
+        max-width: 100%;
+    }
+    .DetailsImage {
+        padding: 10px;
+        margin: 20px;
+        height: auto;
+        max-width: 100%;
+        /* flex-direction: column-reverse; */
+    }
+    .WorkDetails{
+        flex-direction: column-reverse;
+    }
+    
+}
+@media (min-width:601px) and (max-width:767px) {
+    .logo {
+        display: block;
+        width: 150px;
+    }
+    hr {
+        display: none;
+    }
+    .topBar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 34px;
+    }
+    .greyEffectBtn,.blueEffectBtn {
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block !important;
+        padding-left: 5px;
+    }
+    .navbar {
+        display: none;
+    }
+    .photography {
+        margin-top: 10px;
+        display: block;
+        height: auto;
+    }
+    .photographyContent {
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    /* heroImages */
+    /* .images {
+        width: 100%;
+    } */
+    .heroImages {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .BjorkImages, .scratchImages {
+        position: relative;
+        margin: 5px;
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    .scratchImages {
+        padding: 0px;
+    }
+    /* sellingInfo */
+    .DetailsButton {
+        padding: 20px 18px;
+    }
+    .DetailsImage {
+        width: 100%;
+        margin: 0px;
+    }
+    .DetailsContent {
+        width: 100%;
+        padding: 15px 15px 15px 60px;
+    }
+    .DetailsIcon {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .DetailsButton {
+        padding: 20px 18px;
+    }
+    .DetailsDescription {
+        width: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:1000px) {
+    .photography {
+        margin-top: 20px;
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .photographyContent {
+        padding: 30px 112px;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    .openGallery,
+    .homepageExtendButton {
+        display: inline-block;
+    }
+    /* heroImages */
+    /* .images {
+        width: 100%;
+    } */
+    .heroImages {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .BjorkImages, .scratchImages {
+        position: relative;
+        margin: 5px;
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    .scratchImages {
+        padding: 0px;
+    }
+    .photographyDescription {
+        padding-top: 30px;
+        padding-bottom: 12px;
+    }
+    .topBar {
+        padding: 10px 66px;
+    }
+    .navbar {
+        font-size: 14px;
+    }
+    .navbar ul {
+        margin: -10px 67px;
+    }
+    .navbar ul li {
+        padding: 5px 0px;
+        padding-right: 20px;
+    }
+    .DetailsDescription {
+        font-size: 18px;
+        color: #333;
+    }
+    .DetailsContent {
+        width: 50%;
+        padding: 0px 50px;
+    }
+    .DetailsIcon {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .DetailsImage {
+        width: 50%;
+        padding-right: 50px;
+        margin: 0px;
+    }
+    .DetailsButton {
+        padding: 20px 10px;
+    }
+    
+}
+@media (min-width:1001px) and (max-width:1380px){
+    .heroImages{
+        padding-right: 23px;
+    }
+    /* .images{
+        width: 100%;
+        height: auto;
+        margin: 15px;
+    } */
+    .BjorkImages{
+        width: 50%;
+        margin: 0px;
+        margin-right: 20px;
+    }
+    .scratchImages{
+        width: 50%;
+        margin: 0px;
+        margin-right: 20px;
+    }
+    .DetailsDescription {
+        font-size: 18px;
+        color: #333;
+    }
+    .DetailsContent {
+        width: 50%;
+        padding: 0px 50px;
+    }
+    .DetailsIcon {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .DetailsImage {
+        width: 50%;
+        padding-right: 50px;
+        margin: 0px;
+    }
+    .DetailsButton {
+        padding: 20px 10px;
+    }
+}
