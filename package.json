@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://psr-mathur.github.io/My-Portfolio",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "@popperjs/core": "^2.11.8",
