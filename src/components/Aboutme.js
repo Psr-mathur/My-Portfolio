@@ -64,7 +64,7 @@ const Aboutme = () => {
 									<h4>Familiar with:</h4>
 									<p>
 										&#x2022;&nbsp;&nbsp;&nbsp;Git , DBMS ,
-										Material-UI
+										Material-UI , TailwindCSS
 									</p>
 								</TabPanel>
 							</Tabs>
