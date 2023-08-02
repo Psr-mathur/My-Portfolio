@@ -139,7 +139,7 @@ const Projects = () => {
 								</p>
 							</div>
 						</div>
-						<div className="card">
+						{/* <div className="card">
 							<img
 								className="card-img-top projimge"
 								src="/images/contactman.png"
@@ -181,7 +181,13 @@ const Projects = () => {
 									</a>
 								</p>
 							</div>
-						</div>
+						</div> */}
+						<Card
+							imgurl="/images/formilder.png"
+							title="Formilder"
+							github="https://github.com/Psr-mathur/formilder"
+							hosturl="https://formilder.onrender.com/"
+						/>
 						<Card
 							imgurl="/images/emojihub.png"
 							title="EmojiHub"
