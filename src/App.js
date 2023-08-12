@@ -5,11 +5,15 @@ import Projects from "./components/Projects";
 import Contactus from "./components/Contactus";
 import Footer from "./components/Footer";
 import Hello from "./components/Hello";
-// import Particles from "react-particles-js";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 function App() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div>
-			{/* <Particles /> */}
 			<Navbar />
 			<Header />
 			<Aboutme />

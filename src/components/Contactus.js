@@ -1,6 +1,8 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contactus = () => {
+	const [state, handleSubmit] = useForm("mpzgprvw");
 	return (
 		<div className="contactus" id="contactme">
 			<div className="container">
@@ -15,7 +17,7 @@ const Contactus = () => {
 							<form
 								id="contact-form"
 								name="contact-form"
-								action="mail.php"
+								onSubmit={handleSubmit}
 								method="POST"
 							>
 								<div className="row">
@@ -89,14 +91,21 @@ const Contactus = () => {
 										</div>
 									</div>
 								</div>
+								<div className="text-center text-md-left">
+									{state.succeeded && (
+										<div className="status text-success py-1">
+											Email Send successfully.
+										</div>
+									)}
+									<button
+										type="submit"
+										className="btn btn-outline-dark"
+										disabled={state.submitting}
+									>
+										Submit
+									</button>
+								</div>
 							</form>
-
-							<div className="text-center text-md-left">
-								<button className="btn btn-outline-dark">
-									Submit
-								</button>
-							</div>
-							<div className="status"></div>
 						</div>
 
 						<div className="col-md-3 text-center">
